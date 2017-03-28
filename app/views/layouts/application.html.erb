@@ -4,7 +4,7 @@
   	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blogdemoapp</title>
+    <title>Freddy's Blog</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
    	<%= stylesheet_link_tag "application.css", media: "all", "data-turbolinks-track" => true %>
@@ -12,6 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <%= javascript_include_tag "application.js", "data-turbolinks-track" => true %>
+
     <%= csrf_meta_tags %>
 
     
@@ -19,7 +20,8 @@
 
   <body>
 
-  <nav class="navbar navbar-default">
+  
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -29,19 +31,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <ul class="nav navbar-nav navbar-left">
-        <li><%= link_to "Freddy's Blog", root_path %></li>
-      </ul>
+      <a class="navbar-brand" href="#">Freddy's Blog</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-right">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Suche">
-        </div>
-        <button type="submit" class="btn btn-default">finde es!</button>
-      </form>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Ueber mich", static_pages_about_path %></li>
         <li><%= link_to "Kontakt", static_pages_contact_path %></li>        
