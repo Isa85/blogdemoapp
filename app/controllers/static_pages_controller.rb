@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
-  def index
-  end
+  def landing_page
+  	@blogs = Blog.limit(3)
+  end  
 end

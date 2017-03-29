@@ -1,0 +1,21 @@
+<div class="container-fluid blog">  
+  <div class="row">
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+  			<p><% if blog.image_url.present? %>
+    		<%= image_tag(blog.image_url, class: "img-responsive carousel-image") %>
+    		<% end %></p>      
+  			<div class="caption">
+    			<h3><%= blog.title %></h3>
+    			<p><%= blog.content %></p>
+    			<p>erstellt am: <%= blog.published %></p>
+    			<a href="#" class="btn btn-default" role="button">zum Artikel</a></p>
+    			<%= link_to 'Neuer Artikel', new_blog_path %>
+    			<%= link_to 'zeigen', blog %>
+    			<%= link_to 'ändern', edit_blog_path(blog) %>
+    			<%= link_to 'löschen', blog, method: :delete, data: { confirm: 'Are you sure?' } %> 
+  			</div>
+			</div>
+		</div>
+	</div>
+</div>

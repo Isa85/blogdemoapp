@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .start-image {
 	height: 50%;
 	width: 50%;
@@ -12,11 +13,32 @@
 	text-align: center;
 }
 
+.navbar {
+	padding-right: 20px;
+    padding-left: 20px;
+}
+
 .about,
 .contact,
 .header,
 .blog,
-.new-blog {
+.new-blog,
+.edit,
+.show,
+.featured-blog {
 	padding-top: 60px;
+}
+
+#carousel-example-generic {
+    padding-top: 10px;
+}
+
+.carousel-container {	
+	padding-left: -15px;
+	padding-right: -15px;
+	margin-left: -33px;
+	margin-right: -33px;
+	height: 50%;
+
 }
 
