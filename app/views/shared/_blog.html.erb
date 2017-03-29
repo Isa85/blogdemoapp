@@ -2,9 +2,9 @@
   <div class="row">
 		<div class="col-sm-6 col-md-4">
 			<div class="thumbnail">
-  			<p><% if blog.image_url.present? %>
+  			<% if blog.image_url.present? %>
     		<%= image_tag(blog.image_url, class: "img-responsive carousel-image") %>
-    		<% end %></p>      
+    		<% end %>     
   			<div class="caption">
     			<h3><%= blog.title %></h3>
     			<p><%= blog.content %></p>
