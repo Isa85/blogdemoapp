@@ -1,7 +1,8 @@
 <p id="notice"><%= notice %></p>
-		
+<div class="container-fluid blog"> 		
   <% @blogs.each do |blog| %>    		
     <%= render partial: "shared/blog", locals: {blog: blog} %>
   <% end %>
+ </div>
 
     	

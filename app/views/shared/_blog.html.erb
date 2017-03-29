@@ -1,6 +1,5 @@
-<div class="container-fluid blog">  
-  <div class="row">
-		<div class="col-sm-6 col-md-4">
+<div class="col-sm-6 col-md-4">
+  <div class="row">		
 			<div class="thumbnail">
   			<% if blog.image_url.present? %>
     		<%= image_tag(blog.image_url, class: "img-responsive carousel-image") %>
@@ -18,4 +17,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+
